@@ -1,3 +1,21 @@
 
+<h1>Create a Team and Heroes!</h1>
 
+<form action="/pirates" method="POST">
+  Team Name:   <input type="text" name="team[name]"></br>
+  Team Moto:   <input type="text" name="team[motto]"></br>
 
+  <h2>Hero 1</h2>
+
+  Ship_1 Name : <input type="text" id="ship_name_1" name="pirate[ships][][name]"></br>
+  Ship_1 Type:  <input type="text" id="ship_type_1" name="pirate[ships][][type]"></br>
+  Ship_1 Booty: <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"></br>
+
+<h2>Hero 1</h2>
+
+  Ship_2 Name:  <input type="text" id="ship_name_2" name="pirate[ships][][name]"></br>
+  Ship_2 Type:  <input type="text" id="ship_type_2" name="pirate[ships][][type]"></br>
+  Ship_2 Booty: <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"></br>
+
+  <input type="submit" name="Submit" value="Submit">
+</form>
