@@ -1,23 +1,22 @@
-class Members 
-  attr_accessor :name, :power, :bio 
+class Members
+  attr_accessor :name, :power, :bio
 
   @@members = []
-  
+
   def initialize(name, power, bio)
-    @name = name 
-    @power = power 
+    @name = name
+    @power = power
     @bio = bio
-    save 
-  end 
+    save
+  end
 
-  def save 
-    @@members << self 
+  def save
+    @@members << self
     @@members
-  end 
+  end
 
-  def self.all 
-    @@members 
-  end 
+  def self.all
+    @@members
+  end
 
-  
-end 
+end
