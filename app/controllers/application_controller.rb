@@ -9,6 +9,8 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
+      raise params
+
       erb :super_hero
     end
 
