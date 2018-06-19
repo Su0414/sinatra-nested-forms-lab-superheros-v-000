@@ -20,7 +20,7 @@ class App < Sinatra::Base
                        params[:team][:members][0][:bio])
       @hero1.save
 
-      
+
       erb :super_hero
     end
 
