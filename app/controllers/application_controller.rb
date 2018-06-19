@@ -9,7 +9,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      raise params.inspect
+      # raise params.inspect
 
       @team = Team.new(params[:team][:name],
                       params[:team][:motto])
